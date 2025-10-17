@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomised Chaos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="text1">Open a Booster Pack and Join the Fun!</p>
+    <p id="text2">Let the Chaos Ensue..
+        <p> 
+        <p>
+<head>
+    </head>
+<body>
+
+    <img id="pack" src="booster pack.png" alt="Booster Pack">
+
+    <br><br>
+
+    <button onclick="replaceImage()">Click Me!</button>
+
+    <script>
+        const IMAGE_SRC = 'booster pack.png';
+        const OTHER_IMAGE_SRC = 'buy.png'; // The 
+        const imageElement = document.getElementById('pack');
+
+        function replaceImage() {
+            const currentSrc = imageElement.getAttribute('src');
+            if (currentSrc === IMAGE_SRC) {
+
+                imageElement.setAttribute('src', OTHER_IMAGE_SRC);
+
+            } else {
+
+                imageElement.setAttribute('src', IMAGE_SRC);
+                imageElement.setAttribute('alt', 'Booster Pack');
+            }
+        }
+    </script>
+
+    <p>Current Stock: Sold Out :(</p>
+
+</body>
+</html>
